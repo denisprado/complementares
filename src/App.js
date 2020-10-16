@@ -38,7 +38,7 @@ function App() {
       <Form style={{ background: '#fff', border: '1px solid #000', position: 'fixed', margin: '20px', padding: '20px', opacity: .85 }} onSubmit={handleSubmit}>
         <Input name="colorStart" defaultValue={color} type="range" min="0" max="255" />
         <span>{color}</span>
-        <button type="submit">Gerar</button>
+        <button type="submit" style={{ marginLeft: '16px', fontSize: '16px', fontWeight: 'bolder', background: `rgb(${cR},${cG},${cB})`, color: "#fff", padding: '8px', borderRadius: '10px', border: 'none' }}>Gerar</button>
       </Form>
       <Line startColor={[r, g, b]} endColor={[cR, cG, cB]} />
       <Line startColor={[r, g, b]} endColor={[cR, cG, cB]} />
