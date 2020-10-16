@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useField } from '@unform/core';
 import Line from './components/Line'
 import { Form } from '@unform/web';
+import './App.css';
 
 export function Input({ name, ...rest }) {
   const inputRef = useRef(null);
